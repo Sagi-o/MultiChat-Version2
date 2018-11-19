@@ -1,15 +1,16 @@
 package view;
 
+import interfaces.View;
 import model.Client;
 import javax.swing.*;
 import java.awt.*;
 
-public class ClientView {
+public class ClientView implements View {
 
     private JFrame frame;
     private JTextField textField;
     private JTextArea textArea;
-    private JButton sendButton, loginButton;
+    private JButton sendButton, sendAllButton, loginButton;
     private JLabel IPtext, portText, onlineTitle;
     private JList<Client> onlineList;
 
@@ -19,12 +20,11 @@ public class ClientView {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
         frame.setResizable(true);
         createView();
     }
-
-    private void createView() {
+    @Override
+    public void createView() {
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
 
@@ -37,13 +37,18 @@ public class ClientView {
         JPanel southPanel = new JPanel(new BorderLayout());
         mainPanel.add(southPanel, BorderLayout.SOUTH);
 
+        JPanel inSouthPanel = new JPanel(new BorderLayout());
+        southPanel.add(inSouthPanel, BorderLayout.EAST);
+
         // Left - Online clients list
         JPanel westPanel = new JPanel(new BorderLayout());
+        westPanel.setPreferredSize(new Dimension(100,450));
         mainPanel.add(westPanel, BorderLayout.WEST);
 
-        textField = new JTextField();
-        textArea = new JTextArea("Enter your messages here ...");
+        textField = new JTextField(30);
+        textArea = new JTextArea();
         sendButton = new JButton("Send");
+        sendAllButton = new JButton("Send All");
         loginButton = new JButton("Logout");
         IPtext = new JLabel("IP: ");
         portText = new JLabel("Port: ");
@@ -57,10 +62,15 @@ public class ClientView {
         northPanel.add(loginButton, BorderLayout.EAST);
 
         southPanel.add(textField, BorderLayout.WEST);
-        southPanel.add(sendButton, BorderLayout.EAST);
+
+        inSouthPanel.add(sendButton, BorderLayout.WEST);
+        inSouthPanel.add(sendAllButton, BorderLayout.EAST);
 
         westPanel.add(onlineTitle, BorderLayout.NORTH);
-        westPanel.add(onlineList);
+        westPanel.add(onlineList, BorderLayout.CENTER);
+
+        frame.add(mainPanel);
+        frame.setVisible(true);
     }
 
     public JTextField getTextField() {
@@ -85,6 +95,14 @@ public class ClientView {
 
     public void setSendButton(JButton sendButton) {
         this.sendButton = sendButton;
+    }
+
+    public JButton getSendAllButton() {
+        return sendAllButton;
+    }
+
+    public void setSendAllButton(JButton sendButton) {
+        this.sendAllButton = sendButton;
     }
 
     public JButton getLoginButton() {
@@ -119,5 +137,7 @@ public class ClientView {
         this.onlineList = onlineList;
     }
 
-
+    public static void main(String[] args) {
+        new ClientView("Client");
+    }
 }

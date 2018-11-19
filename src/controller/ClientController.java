@@ -2,28 +2,26 @@ package controller;
 
 import interfaces.Clientable;
 import model.Client;
+import model.Message;
 import view.ClientView;
 
-import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.List;
 
 public class ClientController implements Clientable {
 
     private Client client;
     private ClientView clientView;
 
-    ObjectInputStream in;
-    ObjectOutputStream out;
+    private ObjectInputStream in;
+    private ObjectOutputStream out;
 
     public ClientController(Client client, ClientView clientView) {
         this.client = client;
         this.clientView = clientView;
+        initView();
     }
 
     @Override
@@ -35,60 +33,114 @@ public class ClientController implements Clientable {
         in = client.in();
         out = client.out();
 
-        // Sends to server that new client connected
+        // Sends to server the name of user that connected
         out.writeObject(client.getName());
 
-        initView();
-        handleChat();
+        listenFromServer();
     }
 
     @Override
     public void initView() {
+
         clientView.getLoginButton().addActionListener(e -> {
             // Login method
         });
 
+        // Unicast
         clientView.getSendButton().addActionListener(e -> {
-            // Send message method
-            JTextArea textArea = clientView.getTextArea();
-            if (!textArea.getText().trim().equals("")) {
+            String message = clientView.getTextField().getText();
 
+            if (!message.trim().equals("")) {
+
+                Message msg = new Message(Message.UNICAST, message, clientView.getOnlineList().getSelectedValue());
+
+                try {
+                    sendMessage(msg);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
+                // Clear textField
+                clientView.getTextField().setText("");
             }
         });
 
-        clientView.getOnlineList().addListSelectionListener(e -> {
-            clientView.getOnlineList().getSelectedIndex();
-            // Handle
+        // Broadcast
+        clientView.getSendAllButton().addActionListener(e -> {
+            String message = clientView.getTextField().getText();
+
+            if (!message.trim().equals("")) {
+
+                Message msg = new Message(Message.BROADCAST, message);
+
+                try {
+                    sendMessage(msg);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
+                // Clear textField
+                clientView.getTextField().setText("");
+            }
         });
 
+        clientView.getLoginButton().addActionListener(e -> {
+            if (clientView.getLoginButton().getText().equals("Logout")) {
+                logout();
+            } else {
+                login();
+            }
+        });
 
         clientView.getTextField().setText(welcomeMessage(client.getName()));
         clientView.getIPtext().setText("IP: " + client.getServerAddress());
         clientView.getPortText().setText("Port: " + client.getPort());
+
+                /*
+        clientView.getOnlineList().addListSelectionListener(e -> {
+            //clientView.getOnlineList().getSelectedIndex();
+            // Handle
+            //clientView.getTextArea().append();
+        });
+
+        //clientView.getOnlineList().setListData();
+        */
+    }
+
+    private void listenFromServer() {
+        // Handle case that message is GETUSERS
+
+
     }
 
     @Override
-    public void sendMessage() {
+    public void sendMessage(Message message) throws IOException {
+        out.writeObject(message);
+    }
 
+    // If message from server is GETUSERS type, update online list
+    @Override
+    public void updateOnline(List<Client> clients) {
+
+        Client[] onlineList = new Client[clients.size()];
+
+        for (int i = 0; i< clients.size() ; i++) {
+            onlineList[i] = clients.get(i);
+        }
+        clientView.getOnlineList().setListData(onlineList);
     }
 
     @Override
     public void login() {
-
     }
 
     @Override
     public void logout() {
-
     }
 
     @Override
     public String welcomeMessage(String name) {
         return "Welcome, " + name;
-    }
-
-    private void handleChat() {
-
     }
 
 

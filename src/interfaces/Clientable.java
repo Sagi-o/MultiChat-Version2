@@ -1,6 +1,10 @@
 package interfaces;
 
+import model.Client;
+import model.Message;
+
 import java.io.IOException;
+import java.util.List;
 
 public interface Clientable {
 
@@ -8,7 +12,9 @@ public interface Clientable {
 
     void initView();
 
-    void sendMessage();
+    void sendMessage(Message message) throws IOException;
+
+    void updateOnline(List<Client> clients);
 
     void login();
 

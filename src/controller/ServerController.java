@@ -23,6 +23,7 @@ public class ServerController implements Serverable {
     public ServerController(Server server, ServerView serverView) {
         this.server = server;
         this.serverView = serverView;
+        initView();
     }
 
 
@@ -52,7 +53,7 @@ public class ServerController implements Serverable {
 
         Message message;
 
-        ClientRunnable(Socket socket) {
+        ClientRunnable(Socket socket) throws IOException {
             this.socket = socket;
             login(socket, name);
         }
@@ -71,13 +72,34 @@ public class ServerController implements Serverable {
                 clients = server.getActiveClients();
 
                 switch (message.getType()) {
+                    /*
                     case Message.GETUSERS: // 0
-                        for (Client c : clients) {
-                            if (!c.getName().equals(name)) {
-                                // out.writeObject(c.getName());
+
+                        String names = "";
+
+                        if (clients.size() > 1) {
+                            for (Client c : clients) {
+                                if (!c.getName().equals(name)) {
+                                    // out.writeObject(c.getName());
+                                    names += c.getName() + ", ";
+                                }
+                            }
+                            try {
+                                //out.writeObject(new Message(Message.UNICAST, names.substring(0, names.length()-3)));
+                                out.writeObject(server.getActiveClients());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        } else {
+                            try {
+                                out.writeObject(new Message(Message.UNICAST, "No users online"));
+                            } catch (IOException e) {
+                                e.printStackTrace();
                             }
                         }
+
                         break;
+                        */
                     case Message.BROADCAST: // 1
                         try {
                             broadcast(name, messageText);
@@ -95,6 +117,7 @@ public class ServerController implements Serverable {
                     case Message.LOGOUT: // 3
                         try {
                             server.removeClient(client);
+                            notifyClientsListChanged();
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -103,7 +126,7 @@ public class ServerController implements Serverable {
             }
         }
 
-        private void login(Socket socket, String name) {
+        private void login(Socket socket, String name) throws IOException {
             // Initialize socket in and out streams
             try {
                 in = server.in(socket);
@@ -140,23 +163,26 @@ public class ServerController implements Serverable {
 
             client = new Client(name, socket);
             server.addClient(client);
+            notifyClientsListChanged();
         }
 
         private void broadcast(String name, String message) throws IOException {
             for (Client c : clients) {
-                if (!c.getName().equals(name)) c.out().writeObject(name + ": " + message);
+                if (!c.getName().equals(name)) c.out().writeObject(new Message(Message.BROADCAST, name + ": " + message));
             }
-            client.out().writeObject("me: " + message);
+            client.out().writeObject(new Message(Message.UNICAST, "me: " + message));
         }
 
-        private void unicast(String name, String message, String toUser) throws IOException {
+        private void unicast(String name, String message, Client toUser) throws IOException {
+            toUser.out().writeObject(new Message(Message.UNICAST, name + ": " + message));
+            client.out().writeObject(new Message(Message.UNICAST, "me: " + message));
+            }
+
+        private void notifyClientsListChanged() throws IOException {
             for (Client c : clients) {
-                if (c.getName().equals(toUser)) {
-                    c.out().writeObject(name + ": " + message);
-                    client.out().writeObject("me: " + message);
-                    break;
-                }
+                c.out().writeObject(new Message(Message.GETUSERS, clients));
             }
         }
     }
 }
+
