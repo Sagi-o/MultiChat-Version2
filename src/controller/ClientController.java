@@ -52,6 +52,7 @@ public class ClientController implements Clientable {
 
             if (!message.trim().equals("")) {
 
+                //TODO : clientView.getOnlineList().getSelectedValue(), if not selected
                 Message msg = new Message(Message.UNICAST, message, clientView.getOnlineList().getSelectedValue());
 
                 try {
@@ -107,10 +108,19 @@ public class ClientController implements Clientable {
         */
     }
 
-    private void listenFromServer() {
+    private void listenFromServer() throws IOException, ClassNotFoundException {
         // Handle case that message is GETUSERS
 
+        while (true) {
+            Message message = (Message) in.readObject();
 
+            if (message.getType() == Message.GETUSERS) {
+                updateOnline(message.getOnlineList());
+            } else {
+                clientView.getTextArea().append(message.getMessage() + "\n");
+            }
+
+        }
     }
 
     @Override
@@ -121,6 +131,8 @@ public class ClientController implements Clientable {
     // If message from server is GETUSERS type, update online list
     @Override
     public void updateOnline(List<Client> clients) {
+
+        // int i to change
 
         Client[] onlineList = new Client[clients.size()];
 

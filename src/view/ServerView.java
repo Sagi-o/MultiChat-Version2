@@ -5,7 +5,6 @@ import model.Client;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
 
 public class ServerView implements View {
 
@@ -20,7 +19,7 @@ public class ServerView implements View {
         frame = new JFrame(title);
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 500);
+        frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
         frame.setResizable(true);
         createView();
@@ -35,10 +34,10 @@ public class ServerView implements View {
         mainPanel.add(northPanel, BorderLayout.NORTH);
 
         JPanel westPanel = new JPanel(new BorderLayout());
-        westPanel.setPreferredSize(new Dimension(100,450));
+        westPanel.setPreferredSize(new Dimension(100,500));
         mainPanel.add(westPanel, BorderLayout.WEST);
 
-        textArea = new JTextArea("Server is running");
+        textArea = new JTextArea("Server is running\n");
         startButton = new JButton("Stop");
         IPtext = new JLabel("IP: ");
         portText = new JLabel("Port: ");
@@ -61,8 +60,60 @@ public class ServerView implements View {
         frame.setVisible(true);
     }
 
+    public JTextArea getTextArea() {
+        return textArea;
+    }
+
+    public void setTextArea(JTextArea textArea) {
+        this.textArea = textArea;
+    }
+
+    public JButton getStartButton() {
+        return startButton;
+    }
+
+    public void setStartButton(JButton startButton) {
+        this.startButton = startButton;
+    }
+
+    public JLabel getIPtext() {
+        return IPtext;
+    }
+
+    public void setIPtext(JLabel IPtext) {
+        this.IPtext = IPtext;
+    }
+
+    public JLabel getPortText() {
+        return portText;
+    }
+
+    public void setPortText(JLabel portText) {
+        this.portText = portText;
+    }
+
+    public JLabel getOnlineTitle() {
+        return onlineTitle;
+    }
+
+    public void setOnlineTitle(JLabel onlineTitle) {
+        this.onlineTitle = onlineTitle;
+    }
+
+    public JList<Client> getOnlineList() {
+        return onlineList;
+    }
+
+    public void setOnlineList(JList<Client> onlineList) {
+        this.onlineList = onlineList;
+    }
+
+    /*
     public static void main(String[] args) {
          new ServerView("Server");
     }
+    */
+
+
 }
 

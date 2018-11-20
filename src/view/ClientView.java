@@ -137,7 +137,9 @@ public class ClientView implements View {
         this.onlineList = onlineList;
     }
 
+    /*
     public static void main(String[] args) {
         new ClientView("Client");
     }
+    */
 }

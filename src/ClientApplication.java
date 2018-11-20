@@ -13,15 +13,15 @@ public class ClientApplication {
     static private String serverAddress;
     static private String name;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        name = getName();
         serverAddress = getServerAddress();
+        name = getName();
 
         Client client = new Client(name, serverAddress, PORT);
         ClientView clientView = new ClientView(name + " | Connected");
         ClientController clientController = new ClientController(client, clientView);
-
+        clientController.initClient();
     }
 
     private static String getServerAddress() {

@@ -6,10 +6,14 @@ import model.Message;
 import model.Server;
 import view.ServerView;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.net.InetAddress;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.List;
 
 public class ServerController implements Serverable {
@@ -20,7 +24,7 @@ public class ServerController implements Serverable {
     private ObjectInputStream in;
     private ObjectOutputStream out;
 
-    public ServerController(Server server, ServerView serverView) {
+    public ServerController(Server server, ServerView serverView) throws UnknownHostException {
         this.server = server;
         this.serverView = serverView;
         initView();
@@ -40,8 +44,32 @@ public class ServerController implements Serverable {
     }
 
     @Override
-    public void initView() {
+    public void initView() throws UnknownHostException {
+        serverView.getIPtext().setText("IP: " + InetAddress.getLocalHost().getHostAddress() + "\t\t\t");
+        serverView.getPortText().setText("Port: " + server.getPort());
 
+        serverView.getStartButton().addActionListener(e -> {
+            if (server.isRunning()) {
+                /*
+                try {
+                    server.shutdown();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+                */
+                serverView.getStartButton().setText("Start");
+            }
+            else {
+                /*
+                try {
+                    server.start();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+                */
+                serverView.getStartButton().setText("Stop");
+            }
+        });
     }
 
     public class ClientRunnable implements Runnable {
