@@ -4,25 +4,39 @@ import interfaces.View;
 import model.Client;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowEvent;
 
+/**
+ * GUI class that constructs a client side chatter
+ */
 public class ClientView implements View {
 
-    private JFrame frame;
+    private static JFrame frame;
     private JTextField textField;
     private JTextArea textArea;
     private JButton sendButton, sendAllButton, loginButton;
     private JLabel IPtext, portText, onlineTitle;
-    private JList<Client> onlineList;
+    private JList<String> onlineList;
+    private DefaultListModel<String> listModel;
 
+
+    /**
+     * Initialize new frame.
+     * @param title of the frame
+     */
     public ClientView(String title) {
         frame = new JFrame(title);
         frame.getContentPane().setLayout(new BorderLayout());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
         frame.setResizable(true);
         createView();
     }
+
+    /**
+     * Creates the main view using BorderLayout.
+     */
     @Override
     public void createView() {
         JPanel mainPanel = new JPanel();
@@ -31,7 +45,6 @@ public class ClientView implements View {
         // Top - IP, Port and Connect button
         JPanel northPanel = new JPanel(new BorderLayout());
         mainPanel.add(northPanel, BorderLayout.NORTH);
-
 
         // Bottom -  Text field and Send button
         JPanel southPanel = new JPanel(new BorderLayout());
@@ -53,9 +66,16 @@ public class ClientView implements View {
         IPtext = new JLabel("IP: ");
         portText = new JLabel("Port: ");
         onlineTitle = new JLabel("Online");
-        onlineList = new JList<>();
+        listModel = new DefaultListModel<>();
+        onlineList = new JList<>(listModel);
 
-        mainPanel.add(textArea);
+        JScrollPane scrollList = new JScrollPane(onlineList);
+        JScrollPane scrollText = new JScrollPane(textArea);
+
+        onlineList.setAutoscrolls(true);
+        textArea.setAutoscrolls(true);
+
+        mainPanel.add(scrollText);
 
         northPanel.add(IPtext, BorderLayout.WEST);
         northPanel.add(portText, BorderLayout.CENTER);
@@ -67,79 +87,66 @@ public class ClientView implements View {
         inSouthPanel.add(sendAllButton, BorderLayout.EAST);
 
         westPanel.add(onlineTitle, BorderLayout.NORTH);
-        westPanel.add(onlineList, BorderLayout.CENTER);
+        westPanel.add(scrollList, BorderLayout.CENTER);
 
         frame.add(mainPanel);
         frame.setVisible(true);
+    }
+    public JFrame getFrame() {
+        return frame;
     }
 
     public JTextField getTextField() {
         return textField;
     }
 
-    public void setTextField(JTextField textField) {
-        this.textField = textField;
-    }
-
     public JTextArea getTextArea() {
         return textArea;
-    }
-
-    public void setTextArea(JTextArea textArea) {
-        this.textArea = textArea;
     }
 
     public JButton getSendButton() {
         return sendButton;
     }
 
-    public void setSendButton(JButton sendButton) {
-        this.sendButton = sendButton;
-    }
-
     public JButton getSendAllButton() {
         return sendAllButton;
-    }
-
-    public void setSendAllButton(JButton sendButton) {
-        this.sendAllButton = sendButton;
     }
 
     public JButton getLoginButton() {
         return loginButton;
     }
 
-    public void setLoginButton(JButton loginButton) {
-        this.loginButton = loginButton;
-    }
-
     public JLabel getIPtext() {
         return IPtext;
-    }
-
-    public void setIPtext(JLabel IPtext) {
-        this.IPtext = IPtext;
     }
 
     public JLabel getPortText() {
         return portText;
     }
 
-    public void setPortText(JLabel portText) {
-        this.portText = portText;
+    public DefaultListModel<String> getListModel() {
+        return listModel;
     }
 
-    public JList<Client> getOnlineList() {
+    public JList<String> getOnlineList() {
         return onlineList;
     }
 
-    public void setOnlineList(JList<Client> onlineList) {
-        this.onlineList = onlineList;
+    public void showMessagePrompt(String text) {
+        JOptionPane.showMessageDialog(frame,
+                text);
     }
 
-    /*
-    public static void main(String[] args) {
-        new ClientView("Client");
+    /**
+     * Prompt user to enter a name.
+     * @return the name that entered
+     */
+    public static String openNamePrompt() {
+        return JOptionPane.showInputDialog(
+                frame,
+                "Choose a screen name:",
+                "Chat name selection",
+                JOptionPane.PLAIN_MESSAGE);
     }
-    */
+
 }

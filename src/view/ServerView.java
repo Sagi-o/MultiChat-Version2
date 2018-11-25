@@ -1,21 +1,26 @@
 package view;
 
 import interfaces.View;
-import model.Client;
-
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * GUI class that constructs a server side chatter
+ */
 public class ServerView implements View {
 
     private JFrame frame;
     private JTextArea textArea;
     private JButton startButton;
     private JLabel IPtext, portText, onlineTitle;
-    private JList<Client> onlineList;
+    private JList<String> onlineList;
+    private DefaultListModel<String> listModel;
 
+    /**
+     * Initialize new frame.
+     * @param title of the frame
+     */
     public ServerView(String title) {
-
         frame = new JFrame(title);
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,6 +30,9 @@ public class ServerView implements View {
         createView();
     }
 
+    /**
+     * Creates the main view using BorderLayout.
+     */
     @Override
     public void createView() {
         JPanel mainPanel = new JPanel();
@@ -37,83 +45,55 @@ public class ServerView implements View {
         westPanel.setPreferredSize(new Dimension(100,500));
         mainPanel.add(westPanel, BorderLayout.WEST);
 
-        textArea = new JTextArea("Server is running\n");
+        textArea = new JTextArea();
         startButton = new JButton("Stop");
         IPtext = new JLabel("IP: ");
         portText = new JLabel("Port: ");
         onlineTitle = new JLabel("Online");
-        onlineList = new JList<>();
+        listModel = new DefaultListModel<>();
+        onlineList = new JList<>(listModel);
 
-        mainPanel.add(textArea, BorderLayout.CENTER);
+        JScrollPane scrollList = new JScrollPane(onlineList);
+        JScrollPane scrollText = new JScrollPane(textArea);
 
-        westPanel.add(onlineList, BorderLayout.CENTER);
+        onlineList.setAutoscrolls(true);
+        textArea.setAutoscrolls(true);
+
+        mainPanel.add(scrollText, BorderLayout.CENTER);
+
+        westPanel.add(scrollList, BorderLayout.CENTER);
         westPanel.add(onlineTitle, BorderLayout.NORTH);
 
         northPanel.add(IPtext,BorderLayout.WEST);
         northPanel.add(portText,BorderLayout.CENTER);
         northPanel.add(startButton,BorderLayout.EAST);
 
-        //JScrollPane scrollFrame = new JScrollPane(mainPanel);
-        //mainPanel.setAutoscrolls(true);
-
+        frame.setTitle("Server Online");
         frame.getContentPane().add(mainPanel);
         frame.setVisible(true);
+    }
+    public JFrame getFrame() {
+        return frame;
     }
 
     public JTextArea getTextArea() {
         return textArea;
     }
 
-    public void setTextArea(JTextArea textArea) {
-        this.textArea = textArea;
-    }
-
     public JButton getStartButton() {
         return startButton;
-    }
-
-    public void setStartButton(JButton startButton) {
-        this.startButton = startButton;
     }
 
     public JLabel getIPtext() {
         return IPtext;
     }
 
-    public void setIPtext(JLabel IPtext) {
-        this.IPtext = IPtext;
-    }
-
     public JLabel getPortText() {
         return portText;
     }
 
-    public void setPortText(JLabel portText) {
-        this.portText = portText;
+    public DefaultListModel<String> getOnlineList() {
+        return listModel;
     }
-
-    public JLabel getOnlineTitle() {
-        return onlineTitle;
-    }
-
-    public void setOnlineTitle(JLabel onlineTitle) {
-        this.onlineTitle = onlineTitle;
-    }
-
-    public JList<Client> getOnlineList() {
-        return onlineList;
-    }
-
-    public void setOnlineList(JList<Client> onlineList) {
-        this.onlineList = onlineList;
-    }
-
-    /*
-    public static void main(String[] args) {
-         new ServerView("Server");
-    }
-    */
-
-
 }
 
