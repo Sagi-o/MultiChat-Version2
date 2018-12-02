@@ -17,7 +17,7 @@ import java.io.ObjectOutputStream;
  */
 public class ClientController implements Clientable {
 
-    private Client client;
+    public Client client;
     private ClientView clientView;
 
     private ObjectInputStream in;

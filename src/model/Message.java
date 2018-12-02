@@ -5,13 +5,13 @@ import java.io.Serializable;
 /**
  * Simple POJO class that defines Message object that sent between Server and Client:
  *
- * Server to client messages:
+ * Server to Client messages:
  *      GETUSERS: Update users with new list of current active clients.
  *      SERVERCLOSED: Update users that server is closed, make them logout.
  *      VALID: Notify user that some action is valid.
  *      NOTVALID: Notify user that some action is not valid.
  *
- * Client to server messages:
+ * Client to Server messages:
  *      BROADCAST: Client send a message to all active users.
  *      UNICAST: Client send message to specific user.
  *      LOGOUT: Client wants to log out and disconnect from server.

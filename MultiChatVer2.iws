@@ -1,31 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Artifact" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="981b71cf-f3e4-40e4-8ff6-881ab74181f6" name="Default" comment="&quot;improvements in serverController and clientController, uncompleted&quot;">
+      <change afterPath="$PROJECT_DIR$/src/JUnit/ClientControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JUnit/MockClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JUnit/ServerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/ClientApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/ClientApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/ServerApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/ServerApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ClientController.ClientThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ClientController.ClientThread.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ClientController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ClientController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ClientController.listenToServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ClientController.listenToServer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ServerController.ClientThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ServerController.ClientThread.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ServerController.ServerThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ServerController.ServerThread.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/ServerController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/ServerController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/controller/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/Clientable.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/Clientable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/Serverable.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/Serverable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/View.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/View.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/interfaces/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/interfaces/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/Client.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/Client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/Message.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/Message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/Server.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/Server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/model/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/view/ClientView.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/view/ClientView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/view/ServerView.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/view/ServerView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/view/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/view/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/view/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/view/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDoc/view/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/view/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiChat-Version2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiChat-Version2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiChatVer2.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/MultiChatVer2.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiChatVer2.iws" beforeDir="false" afterPath="$PROJECT_DIR$/MultiChatVer2.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/ClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/ClientApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/ServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/ServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController$ClientRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/interfaces/Clientable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/interfaces/Clientable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController$ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController$ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController$listenToServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController$listenToServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController$ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController$ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController$ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController$ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/controller/ServerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/model/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MultiChat-Version2/view/ServerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MultiChat-Version2/view/ServerView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Clientable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Clientable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Serverable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Serverable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ClientView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ServerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ServerView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +92,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ServerApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServerApplication.java">
+      <file leaf-file-name="ServerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ServerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="136">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <element signature="method#ServerController#0;class#ServerController#0" />
+                <element signature="class#ServerThread#0;class#ServerController#0" />
+                <element signature="class#ClientThread#0;class#ServerController#0" />
+                <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
+                <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
+                <element signature="method#unicast#0;class#ServerController#0" />
+                <element signature="method#broadcast#0;class#ServerController#0" />
+                <element signature="method#stopServerClients#0;class#ServerController#0" />
+                <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
+                <element signature="method#getActiveClientNames#0;class#ServerController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnit/ServerControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +125,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnit/ClientControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MockClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JUnit/MockClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <folding>
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
+              <folding>
+                <element signature="method#closeSocket#0;class#Client#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="method#in#0;class#Server#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding>
+                <element signature="method#ClientController#0;class#ClientController#0" />
+                <element signature="method#initClient#0;class#ClientController#0" />
+                <element signature="method#initView#0;class#ClientController#0" />
+                <element signature="method#sendMessage#0;class#ClientController#0" />
+                <element signature="method#logout#0;class#ClientController#0" />
+                <element signature="method#updateOnlinelist#0;class#ClientController#0" />
+                <element signature="method#log#0;class#ClientController#0" />
+                <element signature="class#ClientThread#0;class#ClientController#0" />
+                <element signature="class#listenToServer#0;class#ClientController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="204">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
               <folding>
                 <element signature="method#Message#0;class#Message#0" />
                 <element signature="method#Message#1;class#Message#0" />
@@ -63,11 +227,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="340">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +244,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,14 +271,19 @@
         <option value="$PROJECT_DIR$/src/model/Client.java" />
         <option value="$PROJECT_DIR$/src/view/ServerView.java" />
         <option value="$PROJECT_DIR$/src/view/ClientView.java" />
-        <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
-        <option value="$PROJECT_DIR$/src/controller/ServerController.java" />
         <option value="$PROJECT_DIR$/src/interfaces/Clientable.java" />
         <option value="$PROJECT_DIR$/src/interfaces/Serverable.java" />
         <option value="$PROJECT_DIR$/src/interfaces/View.java" />
         <option value="$PROJECT_DIR$/src/ServerApplication.java" />
         <option value="$PROJECT_DIR$/src/ClientApplication.java" />
         <option value="$PROJECT_DIR$/src/model/Message.java" />
+        <option value="$PROJECT_DIR$/src/JUnit/ServerTest.java" />
+        <option value="$PROJECT_DIR$/src/controller/ServerController.java" />
+        <option value="$PROJECT_DIR$/src/JUnit/ServerControllerTest2.java" />
+        <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/JUnit/ServerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/JUnit/MockClient.java" />
+        <option value="$PROJECT_DIR$/src/JUnit/ClientControllerTest.java" />
       </list>
     </option>
   </component>
@@ -124,11 +296,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="834" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -146,51 +320,18 @@
               <item name="MultiChatVer2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MultiChatVer2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiChatVer2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiChatVer2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiChatVer2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiChatVer2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiChatVer2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
               <item name="MultiChatVer2" type="58d84e3e:PackageViewProjectNode" />
               <item name="MultiChat-Version2" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="MultiChatVer2" type="58d84e3e:PackageViewProjectNode" />
-              <item name="MultiChat-Version2" type="616d4139:PackageViewModuleNode" />
-              <item name="controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MultiChatVer2" type="58d84e3e:PackageViewProjectNode" />
-              <item name="MultiChat-Version2" type="616d4139:PackageViewModuleNode" />
-              <item name="interfaces" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="MultiChatVer2" type="58d84e3e:PackageViewProjectNode" />
-              <item name="MultiChat-Version2" type="616d4139:PackageViewModuleNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -199,11 +340,30 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="JUnit" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -217,22 +377,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClientApplication">
+  <component name="RunManager" selected="JUnit.ClientControllerTest">
     <configuration name="ClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClientApplication" />
       <module name="MultiChat-Version2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="ClientView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.ClientView" />
-      <module name="MultiChat-Version2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ServerApplication" />
@@ -252,6 +401,52 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ClientControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MultiChat-Version2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JUnit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="JUnit" />
+      <option name="MAIN_CLASS_NAME" value="JUnit.ClientControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ServerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MultiChat-Version2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JUnit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="JUnit" />
+      <option name="MAIN_CLASS_NAME" value="JUnit.ServerControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -293,16 +488,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.ServerView" />
-      <item itemvalue="Application.ClientView" />
       <item itemvalue="Application.ClientApplication" />
       <item itemvalue="Application.ServerApplication" />
+      <item itemvalue="JUnit.ServerControllerTest" />
+      <item itemvalue="JUnit.ClientControllerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientApplication" />
+        <item itemvalue="JUnit.ClientControllerTest" />
+        <item itemvalue="JUnit.ServerControllerTest" />
         <item itemvalue="Application.ServerApplication" />
+        <item itemvalue="Application.ClientApplication" />
         <item itemvalue="Application.ServerView" />
-        <item itemvalue="Application.ClientView" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +519,8 @@
       <workItem from="1542709636880" duration="21375000" />
       <workItem from="1542741040326" duration="568000" />
       <workItem from="1542742348743" duration="15000" />
-      <workItem from="1542748450167" duration="62982000" />
+      <workItem from="1542748450167" duration="68006000" />
+      <workItem from="1543176832598" duration="4107000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;improvements in serverController and clientController, uncompleted&quot;">
       <created>1542706888732</created>
@@ -334,12 +532,43 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ClientControllerTest - 2018.11.25 at 22h 57m 30s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 22h 58m 44s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 22h 58m 55s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 02m 02s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 02m 40s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 02m 57s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 03m 37s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 10m 40s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 11m 25s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientControllerTest - 2018.11.25 at 23h 11m 45s.xml">
+      <configuration name="ClientControllerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115102000" />
+    <option name="totallyTimeSpent" value="124233000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,7 +580,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18136272" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18236473" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -388,23 +617,69 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ClientControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <element signature="method#Message#0;class#Message#0" />
+            <element signature="method#Message#1;class#Message#0" />
+            <element signature="method#Message#2;class#Message#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ServerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/ServerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2567">
           <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
           <folding>
             <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
             <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
             <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
             <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
             <element signature="method#unicast#0;class#ServerController#0" />
             <element signature="method#broadcast#0;class#ServerController#0" />
             <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
             <element signature="method#getActiveClientNames#0;class#ServerController#0" />
           </folding>
         </state>
@@ -418,17 +693,12 @@
             <element signature="method#ClientController#0;class#ClientController#0" />
             <element signature="method#initClient#0;class#ClientController#0" />
             <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
             <element signature="method#sendMessage#0;class#ClientController#0" />
             <element signature="method#logout#0;class#ClientController#0" />
             <element signature="method#updateOnlinelist#0;class#ClientController#0" />
             <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
             <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -439,8 +709,6 @@
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getServerAddress#0;class#ClientApplication#0" />
-            <element signature="method#getName#0;class#ClientApplication#0" />
           </folding>
         </state>
       </provider>
@@ -451,17 +719,14 @@
           <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
           <folding>
             <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
             <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
             <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
             <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
             <element signature="method#unicast#0;class#ServerController#0" />
             <element signature="method#broadcast#0;class#ServerController#0" />
             <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
             <element signature="method#getActiveClientNames#0;class#ServerController#0" />
           </folding>
         </state>
@@ -475,17 +740,12 @@
             <element signature="method#ClientController#0;class#ClientController#0" />
             <element signature="method#initClient#0;class#ClientController#0" />
             <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
             <element signature="method#sendMessage#0;class#ClientController#0" />
             <element signature="method#logout#0;class#ClientController#0" />
             <element signature="method#updateOnlinelist#0;class#ClientController#0" />
             <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
             <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -496,8 +756,6 @@
           <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getServerAddress#0;class#ClientApplication#0" />
-            <element signature="method#getName#0;class#ClientApplication#0" />
           </folding>
         </state>
       </provider>
@@ -508,17 +766,14 @@
           <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
           <folding>
             <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
             <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
             <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
             <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
             <element signature="method#unicast#0;class#ServerController#0" />
             <element signature="method#broadcast#0;class#ServerController#0" />
             <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
             <element signature="method#getActiveClientNames#0;class#ServerController#0" />
           </folding>
         </state>
@@ -532,17 +787,12 @@
             <element signature="method#ClientController#0;class#ClientController#0" />
             <element signature="method#initClient#0;class#ClientController#0" />
             <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
             <element signature="method#sendMessage#0;class#ClientController#0" />
             <element signature="method#logout#0;class#ClientController#0" />
             <element signature="method#updateOnlinelist#0;class#ClientController#0" />
             <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
             <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -553,8 +803,6 @@
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getServerAddress#0;class#ClientApplication#0" />
-            <element signature="method#getName#0;class#ClientApplication#0" />
           </folding>
         </state>
       </provider>
@@ -565,17 +813,14 @@
           <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
             <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
             <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
             <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
             <element signature="method#unicast#0;class#ServerController#0" />
             <element signature="method#broadcast#0;class#ServerController#0" />
             <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
             <element signature="method#getActiveClientNames#0;class#ServerController#0" />
           </folding>
         </state>
@@ -586,15 +831,9 @@
         <state relative-caret-position="765">
           <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="method#Message#0;class#Message#0" />
+            <element signature="method#Message#1;class#Message#0" />
+            <element signature="method#Message#2;class#Message#0" />
           </folding>
         </state>
       </provider>
@@ -626,8 +865,6 @@
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getServerAddress#0;class#ClientApplication#0" />
-            <element signature="method#getName#0;class#ClientApplication#0" />
           </folding>
         </state>
       </provider>
@@ -647,17 +884,12 @@
             <element signature="method#ClientController#0;class#ClientController#0" />
             <element signature="method#initClient#0;class#ClientController#0" />
             <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
             <element signature="method#sendMessage#0;class#ClientController#0" />
             <element signature="method#logout#0;class#ClientController#0" />
             <element signature="method#updateOnlinelist#0;class#ClientController#0" />
             <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
             <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,8 +907,6 @@
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getServerAddress#0;class#ClientApplication#0" />
-            <element signature="method#getName#0;class#ClientApplication#0" />
           </folding>
         </state>
       </provider>
@@ -689,17 +919,12 @@
             <element signature="method#ClientController#0;class#ClientController#0" />
             <element signature="method#initClient#0;class#ClientController#0" />
             <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
             <element signature="method#sendMessage#0;class#ClientController#0" />
             <element signature="method#logout#0;class#ClientController#0" />
             <element signature="method#updateOnlinelist#0;class#ClientController#0" />
             <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
             <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -738,17 +963,14 @@
           <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
           <folding>
             <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
             <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
             <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
             <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
             <element signature="method#unicast#0;class#ServerController#0" />
             <element signature="method#broadcast#0;class#ServerController#0" />
             <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
             <element signature="method#getActiveClientNames#0;class#ServerController#0" />
           </folding>
         </state>
@@ -768,26 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="method#in#0;class#Server#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="method#closeSocket#0;class#Client#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ClientView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -803,29 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="202" selection-start-line="202" selection-end-line="205" selection-end-column="7" />
-          <folding>
-            <element signature="method#ClientController#0;class#ClientController#0" />
-            <element signature="method#initClient#0;class#ClientController#0" />
-            <element signature="method#initView#0;class#ClientController#0" />
-            <element signature="e#1836#2512#0" />
-            <element signature="e#2404#2853#0" />
-            <element signature="e#4389#4711#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
-            <element signature="method#sendMessage#0;class#ClientController#0" />
-            <element signature="method#logout#0;class#ClientController#0" />
-            <element signature="method#updateOnlinelist#0;class#ClientController#0" />
-            <element signature="method#log#0;class#ClientController#0" />
-            <element signature="class#listenToServer#0;class#ClientController#0" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7785#7786#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,52 +1032,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ServerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="338" selection-start-line="338" selection-end-line="341" selection-end-column="7" />
-          <folding>
-            <element signature="method#ServerController#0;class#ServerController#0" />
-            <element signature="method#initServer#0;class#ServerController#0" />
-            <element signature="class#ServerThread#0;class#ServerController#0" />
-            <element signature="method#initView#0;class#ServerController#0" />
-            <element signature="class#ClientThread#0;class#ServerController#0" />
-            <element signature="e#3938#3939#0" expanded="true" />
-            <element signature="e#3982#3983#0" expanded="true" />
-            <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
-            <element signature="method#stop#0;class#ServerController#0" />
-            <element signature="method#unicast#0;class#ServerController#0" />
-            <element signature="method#broadcast#0;class#ServerController#0" />
-            <element signature="method#stopServerClients#0;class#ServerController#0" />
-            <element signature="method#getActiveClientNames#0;class#ServerController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
             <element signature="method#Message#0;class#Message#0" />
             <element signature="method#Message#1;class#Message#0" />
@@ -907,12 +1044,242 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-MultiChat-Version2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-MultiChat-Version2</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-MultiChat-Version2</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7691747943147542" x="122.0" y="49.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ServerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" selection-start-line="27" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="method#in#0;class#Server#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="method#ClientController#0;class#ClientController#0" />
+            <element signature="method#initClient#0;class#ClientController#0" />
+            <element signature="method#initView#0;class#ClientController#0" />
+            <element signature="method#sendMessage#0;class#ClientController#0" />
+            <element signature="method#logout#0;class#ClientController#0" />
+            <element signature="method#updateOnlinelist#0;class#ClientController#0" />
+            <element signature="method#log#0;class#ClientController#0" />
+            <element signature="class#ClientThread#0;class#ClientController#0" />
+            <element signature="class#listenToServer#0;class#ClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="method#ServerController#0;class#ServerController#0" />
+            <element signature="class#ServerThread#0;class#ServerController#0" />
+            <element signature="class#ClientThread#0;class#ServerController#0" />
+            <element signature="method#closeConnection#0;class#ClientThread#0;class#ServerController#0" />
+            <element signature="method#stopReceivingSockets#0;class#ServerController#0" />
+            <element signature="method#unicast#0;class#ServerController#0" />
+            <element signature="method#broadcast#0;class#ServerController#0" />
+            <element signature="method#stopServerClients#0;class#ServerController#0" />
+            <element signature="method#notifyClientsListChanged#0;class#ServerController#0" />
+            <element signature="method#getActiveClientNames#0;class#ServerController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ServerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="method#closeSocket#0;class#Client#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/MockClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JUnit/ClientControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Artifact</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MultiChat-Version2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Arquillian JUnit:Release</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

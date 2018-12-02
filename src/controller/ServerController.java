@@ -17,7 +17,7 @@ import java.net.UnknownHostException;
  */
 public class ServerController implements Serverable {
 
-    private Server server;
+    public Server server;
     private ServerView serverView;
     private boolean isServerRunning;
 
@@ -33,7 +33,6 @@ public class ServerController implements Serverable {
         initServer(true);
     }
 
-
     /**
      * Calls new thread for every server instance.
      * @param firstRun find if view is already built
@@ -48,34 +47,6 @@ public class ServerController implements Serverable {
         serverThread.start();
     }
 
-    /**
-     * Server thread will listen to every socket that asks to connect, he will accept it while the server is running.
-     * Every client that connects will get a new ClientThread.
-     */
-    public class ServerThread extends Thread {
-        public void run() {
-            isServerRunning = true;
-
-            log("Server is running...");
-
-            while (isServerRunning) {
-                Socket socket = null;
-                try {
-                    socket = server.getServerSocket().accept();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                if (!isServerRunning) break;
-
-                Thread clientThread = new Thread(new ClientThread(socket));
-                log("Starting new thread...");
-
-                clientThread.start();
-            }
-            log("Server not accepting any sockets.");
-        }
-    }
 
     /**
      * Initialize the GUI that came from the constructor.
@@ -113,6 +84,35 @@ public class ServerController implements Serverable {
                 serverView.getStartButton().setText("Stop");
             }
         });
+    }
+
+    /**
+     * Server thread will listen to every socket that asks to connect, he will accept it while the server is running.
+     * Every client that connects will get a new ClientThread.
+     */
+    public class ServerThread extends Thread {
+        public void run() {
+            isServerRunning = true;
+
+            log("Server is running...");
+
+            while (isServerRunning) {
+                Socket socket = null;
+                try {
+                    socket = server.getServerSocket().accept();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                if (!isServerRunning) break;
+
+                Thread clientThread = new Thread(new ClientThread(socket));
+                log("Starting new thread...");
+
+                clientThread.start();
+            }
+            log("Server not accepting any sockets.");
+        }
     }
 
     /**
@@ -386,10 +386,6 @@ public class ServerController implements Serverable {
             }
         }
     }
-
-    // Send SERVERCLOSED message to every client, tell them them to disconnect, then the server
-    // closes connection from his side in the while loop in every thread.
-    // After for loop, server will stop recieving sockets.
 
     /**
      * Send SERVERCLOSED message to every client, tell them them to disconnect, then the server
